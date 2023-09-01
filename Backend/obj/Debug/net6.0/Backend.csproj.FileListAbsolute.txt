@@ -30,3 +30,14 @@ D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\obj\Debug\net6.0
 D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\obj\Debug\net6.0\Backend.pdb
 D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\obj\Debug\net6.0\Backend.genruntimeconfig.cache
 D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\obj\Debug\net6.0\ref\Backend.dll
+D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Technical_Test_Angular\Technical_Task\Technical_Task\Backend\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll

@@ -3,42 +3,41 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <main>
-        <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-        </section>
+         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false">
+            <Columns>
+                <asp:BoundField DataField="FirstName" HeaderText="First Name" />
+                <asp:BoundField DataField="LastName" HeaderText="Last Name" />
+                <asp:BoundField DataField="Address" HeaderText="Address" />
+                <asp:TemplateField>
+                    <ItemTemplate>
+                        <asp:LinkButton ID="lnkselect" runat="server" CommandArgument='<%# Eval("Id") %>' OnClick="lnkselect_Click" >Select</asp:LinkButton>
+                    </ItemTemplate>                    
+                </asp:TemplateField>               
+                <asp:TemplateField>
+                     <ItemTemplate>
+                        <asp:LinkButton ID="lnkview" runat="server" CommandArgument='<%# Eval("Id") %>' OnClick="lnkview_Click" >View</asp:LinkButton>
+                         </ItemTemplate>
+                </asp:TemplateField>
 
-        <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
-        </div>
+
+            </Columns>
+
+        </asp:GridView>              
+        
     </main>
-
+    <asp:HiddenField id="txtid" runat="server" />
+     <asp:Label ID="lblfname" runat="server" Text="First Name"></asp:Label>
+     <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
+     <br /><br />
+     <asp:Label ID="lbllname" runat="server" Text="Last Name"></asp:Label>
+     <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
+     <br /><br />
+     <asp:Label ID="lblAddress" runat="server" Text="Address"></asp:Label>
+     <asp:TextBox ID="txtAddress" runat="server"></asp:TextBox>
+     <br /><br />
+     <asp:Label ID="lblmsg" runat="server" Text=""></asp:Label>
+     <br /><br />
+     <asp:Button ID="btnadd" runat="server" Text="Add" OnClick="btnadd_Click" />
+     <asp:Button ID="btnupdate" runat="server" Text="Update" OnClick="btnupdate_Click" />
+     <asp:Button ID="btndelete" runat="server" Text="Delete" OnClick="btndelete_Click" />
 </asp:Content>
